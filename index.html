@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <title>Mama na kvadrat | </title>
+    <link rel="stylesheet" href="../app/scss/main.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mama <span>na kvadrat</span></h1>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_list_item">
+                        <a href="#onama" class="nav_list_item_link">O nama</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#usluge" class="nav_list_item_link">Usluge</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#cenovnik" class="nav_list_item_link">Cenovnik</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#kontakt" class="nav_list_item_link">Kontakt</a>
+                    </li>
+                </ul>
+                <button class="btn_close" type="button"></button>
+            </nav>
+            <button class="btn_menu" type="button"></button>
+        </div>
+    </header>
+
+    <section class="about" id="onama">
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio2">
+                    <input type="radio" name="radio_btn" id="radio3">
+                    <div class="slide first">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/3.jpg" alt="">
+                    </div>
+                    <div class="navigation_auto">
+                        <div class="auto_btn1"></div>
+                        <div class="auto_btn2"></div>
+                        <div class="auto_btn3"></div>
+                    </div>
+                </div>
+                <div class="navigation_manual">
+                    <label for="radio1" class="manual_btn"></label>
+                    <label for="radio2" class="manual_btn"></label>
+                    <label for="radio3" class="manual_btn"></label>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <script src="../app/js/main.js"></script>
+
+</body>
