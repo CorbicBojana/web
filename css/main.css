@@ -48,7 +48,7 @@ table {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 * {
@@ -202,6 +202,9 @@ body {
   margin-top: 50px;
   padding: 3rem 2rem;
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .footer a {
   color: #fff;
