@@ -432,9 +432,6 @@ body {
   .header .container .btn_menu:hover {
     cursor: pointer;
   }
-  .contact {
-    padding: 4.4rem 0;
-  }
   .contact .container .content {
     flex-direction: column;
     font-size: 0.9rem;
@@ -447,9 +444,6 @@ body {
   }
   .contact .container .content .contact_right .contact_form .second_row input {
     width: 100%;
-  }
-  .footer {
-    width: calc(100% - 346px);
   }
   .footer .footer_container {
     flex-direction: column;

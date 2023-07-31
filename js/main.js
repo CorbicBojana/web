@@ -2,6 +2,7 @@
 const btnMenu = document.querySelector(".btn_menu");
 const btnClose = document.querySelector(".btn_close");
 const navigation = document.querySelector(".nav");
+const navItems = document.querySelectorAll(".nav_list_item_link");
 
 btnMenu.addEventListener("click", () => {
     navigation.classList.add("active")
@@ -9,6 +10,12 @@ btnMenu.addEventListener("click", () => {
 
 btnClose.addEventListener("click", () => {
     navigation.classList.remove("active")
+})
+
+navItems.forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+        navigation.classList.remove("active")
+    })
 })
 
 //==========SLIDER
