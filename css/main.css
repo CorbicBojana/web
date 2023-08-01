@@ -110,9 +110,14 @@ body {
   display: none;
 }
 
+.about {
+  padding: 0 0 6rem 0;
+}
 .about .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 10px;
 }
 .about .container .slider {
@@ -190,6 +195,23 @@ body {
 }
 .about .container .slider .navigation_manual .manual_btn:hover {
   background-color: #ff590b;
+}
+.about .container .content {
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.2;
+}
+.about .container .content p span {
+  color: #ff590b;
+  font-weight: 900;
+}
+
+.services {
+  padding: 6rem 0;
+}
+
+.pricelist {
+  padding: 6rem 0;
 }
 
 .contact {
