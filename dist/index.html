@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <title>Mama na kvadrat | </title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mama <span>na kvadrat</span></h1>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_list_item">
+                        <a href="#onama" class="nav_list_item_link">O nama</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#usluge" class="nav_list_item_link">Usluge</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#cenovnik" class="nav_list_item_link">Cenovnik</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#kontakt" class="nav_list_item_link">Kontakt</a>
+                    </li>
+                </ul>
+                <button class="btn_close" type="button"></button>
+            </nav>
+            <button class="btn_menu" type="button"></button>
+        </div>
+    </header>
+
+    <section class="about" id="onama">
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio2">
+                    <input type="radio" name="radio_btn" id="radio3">
+                    <div class="slide first">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/3.jpg" alt="">
+                    </div>
+                    <div class="navigation_auto">
+                        <div class="auto_btn1"></div>
+                        <div class="auto_btn2"></div>
+                        <div class="auto_btn3"></div>
+                    </div>
+                </div>
+                <div class="navigation_manual">
+                    <label for="radio1" class="manual_btn"></label>
+                    <label for="radio2" class="manual_btn"></label>
+                    <label for="radio3" class="manual_btn"></label>
+                </div>
+            </div>
+            <div class="content">
+                <p><span>Mama na kvadrat</span> je agencija koja nudi usluge čuvanja dece.Cilj
+                     agencije je da svim roditeljima i starateljima omogući da brzo
+                      i lako pronađu savršenu dadilju. Pažljivo slušamo zahteve
+                       klijenata i na njih odgovaramo ponudom koja zadovoljava sve
+                        njihove potrebe. Naš kadar odlikuju izrazita
+                         profesionalnost, podrobno poznavanje psihologije deteta,
+                          kreativnost, i ono što je najvažnije - neizmerna ljubav
+                           prema deci. Osim čuvanja dece, <span>Mama na kvadrat</span> tim pruža i uslugu
+                            držanja časova deci starijeg uzrasta iz oblasti prirodnih nauka.
+                        </p>
+            </div>  
+        </div>
+    </section>
+
+    <section class="services" id="usluge">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section class="pricelist" id="cenovnik">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./img/full_time.jpg" alt="full_time" title="full_time">
+                    <p><span>Puno radno vreme</span>Naše dadilje vode brigu o Vašoj
+                    deci 8 sati svakog radnog dana.</p>
+                </div>
+                <div class="col">
+                    <img src="./img/part_time.jpg" alt="part_time" title="part_time">
+                    <p><span>Part-time dadilje</span>Staramo se o Vašoj deci u vreme 
+                    definisano u dogovoru sa Vama.</p>
+                </div>
+                <div class="col">
+                    <img src="./img/part_time.jpg" alt="part_time" title="part_time">
+                    <p><span>Časovi prirodnih nauka</span>Diplomirani nastavnici prirodnih
+                    nauka sa iskustvom drže časove Vašoj deci.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <div class="content">
+                <div class="contact_left">
+                    <h2>Agencija za Čuvanje Dece</h2>
+                    <ul class="contact_list">
+                        <li>
+                            <h3 class="item_title"><i class="fas fa-phone"></i> Telefon</h3>
+                            <span>+381652871720</span>
+                        </li>
+                        <li>
+                            <h3 class="item_title"><i class="fas fa-envelope"></i> Email Adresa</h3>
+                            <span><a href="mailto:mamanakvadrat@gmail.com">MamaNaKvadrat@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <h3 class="item_title"><i class="fas fa-map-marker-alt"></i> Adresa</h3>
+                            <span>36000 Kraljevo, Srbija</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact_right">
+                    <p>Mi vodimo besprekornu brigu o <br><span>Vašoj Deci.</span></p>
+                    <form action="" class="contact_form">
+                        <div class="first_row">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="second_row">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="third_row">
+                            <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="about group">
+                <h2>Mama <span>na kvadrat</span></h2>
+                <p>Agencija Za Čuvanje Dece</p>
+                <a href="#onama">O nama</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>-</h3>
+                <ul>
+                    <li><a href="#usluge">Usluge</a></li>
+                    <li><a href="#cenovnik">Cenovnik</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>-</h3>
+            <ul>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer_copyright group">
+            <p>© 2023 Mama na kvadrat</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
