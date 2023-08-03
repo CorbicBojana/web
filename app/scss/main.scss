@@ -188,10 +188,10 @@ body {
 
     .content {
       margin-top: 10px;
-      color: $third_color;
-      line-height: 1.2;
 
       p {
+        color: $third_color;
+        line-height: 1.2;
 
         span {
           color: $first_color;
@@ -205,11 +205,110 @@ body {
 //==========SERVICES SECTION
 .services {
   padding: 6rem 0;
+
+  .container {
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .col {
+        width: 30%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          margin-bottom: 10px;
+          border-radius: 10px;
+        }
+
+        p {
+          color: $third_color;
+          line-height: 1.2;
+          text-align: center;
+
+          span {
+            display: block;
+            color: #ff590b;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
 }
 
 //==========PRICELIST SECTION
 .pricelist {
   padding: 6rem 0;
+
+  .container {
+
+    h2 {
+      display: inline-block;
+      color: $third_color;
+
+      &:last-of-type {
+        margin-left: 60px;
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content_info {
+        margin-left: 20px;
+
+        p {
+          color: $third_color;
+          line-height: 2;
+        }
+      }
+    }
+
+    .content_table {
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      min-width: 400px;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+      thead {
+
+        tr {
+          background-color: $first_color;
+          color: $second_color;
+          text-align: left;
+          font-weight: bold;
+        }
+      }
+
+      tbody {
+
+        tr {
+          border-bottom: 1px solid #dddddd;
+
+          &:last-of-type {
+            border-bottom: 2px solid $first_color;
+          }
+        }
+      }
+
+      th, td {
+        padding: 12px 15px;
+      }
+
+      th {
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 //==========CONTACT 

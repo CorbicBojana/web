@@ -207,6 +207,42 @@
             }
         }
     }
+
+    //==========SERVICES SECTION
+    .services {
+
+        .container {
+
+            .row {
+
+                .col {
+                    width: 100%;
+                    margin-bottom: 40px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .pricelist {
+
+        .container {
+
+            .content {
+                flex-direction: column;
+
+                .content_info {
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 620px) {
