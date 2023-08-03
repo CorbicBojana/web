@@ -447,6 +447,31 @@ body {
   margin-top: 50px;
 }
 
+.scrollToTop_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #ff590b;
+  color: #fff;
+  font-size: 0.9em;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.active {
+  right: 20px;
+  pointer-events: all;
+  opacity: 1;
+}
+
 @media screen and (max-width: 1080px) {
   .header .container .nav {
     position: fixed;
@@ -598,11 +623,19 @@ body {
   .services .container .row .col:last-child {
     margin-bottom: 0;
   }
+  .pricelist .container h2:first-child {
+    margin-left: 200px;
+  }
   .pricelist .container .content {
     flex-direction: column;
   }
   .pricelist .container .content .content_info p {
     text-align: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .pricelist .container h2:first-child {
+    margin-left: 160px;
   }
 }
 @media screen and (max-width: 620px) {
@@ -624,6 +657,14 @@ body {
   .about .container .slider .navigation_manual {
     width: 400px;
   }
+  .pricelist .container h2:first-child {
+    margin-left: 110px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .pricelist .container h2:first-child {
+    margin-left: 60px;
+  }
 }
 @media screen and (max-width: 420px) {
   .about .container .slider {
@@ -643,5 +684,29 @@ body {
   }
   .about .container .slider .navigation_manual {
     width: 320px;
+  }
+  .pricelist .container h2:first-child {
+    margin-left: 0px;
+  }
+  .pricelist .container h2:last-of-type {
+    margin-left: 30px;
+  }
+  .pricelist .container .content .content_table {
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 390px) {
+  .pricelist .container h2:last-of-type {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 360px) {
+  .pricelist .container h2:last-of-type {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 420px) and (max-width: 330px) {
+  .pricelist .container h2:last-of-type {
+    margin-left: 5px;
   }
 }/*# sourceMappingURL=main.css.map */

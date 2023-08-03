@@ -524,6 +524,30 @@ body {
   }
 } 
 
+//==========SCROLL TO TOP BUTTON
+.scrollToTop_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: $first_color;
+  color: $second_color;
+  font-size: 0.9em;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: .5s ease;
+}
 
+.active {
+  right: 20px;
+  pointer-events: all;
+  opacity: 1;
+}
 
 @import "media";

@@ -28,3 +28,15 @@ setInterval(function() {
         counter = 1;
     }
 },5000)
+
+//==========SCROLL
+const scrollTopBtn = document.querySelector(".scrollToTop_btn");
+
+window.addEventListener("scroll", function() {
+    scrollTopBtn.classList.toggle("active", window.scrollY > 350)
+})
+
+scrollTopBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0
+})
