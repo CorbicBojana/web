@@ -545,7 +545,7 @@ body {
 }
 
 .active {
-  right: 20px;
+  right: calc(100px + 20%);
   pointer-events: all;
   opacity: 1;
 }
