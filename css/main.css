@@ -198,6 +198,8 @@ body {
 }
 .about .container .content {
   margin-top: 10px;
+}
+.about .container .content p {
   color: #333;
   line-height: 1.2;
 }
@@ -209,9 +211,80 @@ body {
 .services {
   padding: 6rem 0;
 }
+.services .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .container .row .col {
+  width: 30%;
+  overflow: hidden;
+}
+.services .container .row .col img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.services .container .row .col p {
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+}
+.services .container .row .col p span {
+  display: block;
+  color: #ff590b;
+  font-weight: 900;
+}
 
 .pricelist {
   padding: 6rem 0;
+}
+.pricelist .container h2 {
+  display: inline-block;
+  color: #333;
+}
+.pricelist .container h2:last-of-type {
+  margin-left: 60px;
+}
+.pricelist .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricelist .container .content .content_info {
+  margin-left: 20px;
+}
+.pricelist .container .content .content_info p {
+  color: #333;
+  line-height: 2;
+}
+.pricelist .container .content_table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.pricelist .container .content_table thead tr {
+  background-color: #ff590b;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+.pricelist .container .content_table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.pricelist .container .content_table tbody tr:last-of-type {
+  border-bottom: 2px solid #ff590b;
+}
+.pricelist .container .content_table th, .pricelist .container .content_table td {
+  padding: 12px 15px;
+}
+.pricelist .container .content_table th {
+  text-transform: uppercase;
 }
 
 .contact {
@@ -517,6 +590,19 @@ body {
   }
   .about .container .slider .navigation_manual {
     width: 600px;
+  }
+  .services .container .row .col {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .services .container .row .col:last-child {
+    margin-bottom: 0;
+  }
+  .pricelist .container .content {
+    flex-direction: column;
+  }
+  .pricelist .container .content .content_info p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 620px) {
