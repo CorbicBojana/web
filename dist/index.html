@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <title>Mama na kvadrat | </title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../app/scss/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
     <!--==========SCROLL TO TOP BUTTON-->
     <div class="scrollToTop_btn">
         <i class="fas fa-arrow-up"></i>
-    </div> 
+    </div>
 
     <header class="header">
         <div class="container">
@@ -172,7 +172,6 @@
                 <div class="content_info">
                     <p>CENA SE UVEĆAVA ZA 20% ZA DRUGO DETE I 30% ZA TREĆE DETE<br>
                         CENA ZA DRŽANJE PRIVATNIH ČASOVA IZNOSI 600 DINARA PO ČASU<br>
-                        CENA ZA OBAVLJANJE KUĆNIH POSLOVA IZNOSI 450 DINARA PO SATU<br>
                         Mesečna naknada agencije je 3000 RSD za period čuvanja do 4 časa,
                          odnosno 3300 RSD za period čuvanja duže od 4 časa dnevno.</p>
                 </div>
@@ -202,18 +201,18 @@
                 </div>
                 <div class="contact_right">
                     <p>Mi vodimo besprekornu brigu o <br><span>Vašoj Deci.</span></p>
-                    <form action="" class="contact_form">
+                    <form action="mail_handler.php" method="post" name="form" class="contact_form">
                         <div class="first_row">
-                            <input type="text" placeholder="Name">
+                            <input type="text" name="name" placeholder="Name" required>
                         </div>
                         <div class="second_row">
-                            <input type="email" placeholder="Email">
-                            <input type="text" placeholder="Subject">
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="third_row">
-                            <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                            <textarea name="msg" id="" rows="7" placeholder="Message" required></textarea>
                         </div>
-                        <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                        <button class="btn" type="submit" name="submit">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
